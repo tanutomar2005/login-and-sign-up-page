@@ -1,0 +1,92 @@
+
+{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #89f7fe,#d6e0e8);
+}
+
+.container {
+     width: 100%; 
+     max-width: 400px;
+     padding: 20px;
+    }
+
+ .form-box { width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(187, 168, 168, 0.2);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    animation: slideUp 0.6s ease;
+}
+
+ @keyframes slideUp {
+    from { transform: translateY(40px);
+        opacity: 0;
+    } to { transform: translateY(0);
+        opacity: 1; }
+    }
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: navy rgb(22, 22, 79);
+}
+
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    background: #fff;
+    color: #333;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e3e3e3;
+}
+
+.toggle {
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.toggle { 
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.toggle span {
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+.hidden {
+    display: none;
+}
